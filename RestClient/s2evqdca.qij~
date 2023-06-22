@@ -1,0 +1,64 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public static class API
+{
+    //const string base_url = "http://castleadmin.staging-server.in/api/";
+    const string base_url = "https://0h29ute7nd.execute-api.ap-south-1.amazonaws.com/dev/mgp-game/api/v1/api-docs/index.html#/game/";
+
+    //
+    const string after_auth = base_url + "";
+    const string before_auth = base_url + "";
+
+    #region Before Auth
+    //Account Repository
+    public const string login = base_url + "login";
+    public const string register = base_url + "register";
+    public const string resend_otp = base_url + "resend_otp";
+    public const string verify_otp = base_url + "verify_otp";
+    #endregion
+
+    #region After Auth
+    public const string get_games_play_token = base_url + "get_games_play_token";
+
+
+    //User Repository
+    public const string logout = base_url + "logout";
+    public const string verify_token = base_url + "verify_token";
+    public const string get_app_configuration_variables = base_url + "get_app_configuration_variables";
+    public const string get_profile = base_url + "get_profile";
+    public const string update_profile = base_url + "update_user";
+
+    //Game Repository
+    public const string get_cms_pages = base_url + "cms_pages";
+    public const string get_betting_amounts = base_url + "get_betting_amounts";
+    public const string show_betting_amount = base_url + "show_betting_amount_details";
+    public const string get_coin_packages = base_url + "get_coin_packages";
+    public const string get_coin_package_details = base_url + "get_coin_package_details";
+    public const string update_notification_status = base_url + "user_notification_status";
+    public const string contact_us_request = base_url + "contact_us_request";
+    public const string check_balance = base_url + "request_game";
+    public const string add_game_record = base_url + "add_game_record";
+    public const string start_game = base_url + "start_game";
+    public const string end_game = base_url + "end_game";
+    public const string get_wallet_history = base_url + "wallet_history";
+    public const string get_game_history = base_url + "get_game_history";
+    public const string leaderboard = base_url + "leaderboard";
+    public const string purchaseStoreItem = base_url + "purchase_store_item";
+
+    //Tournament Repository
+    public const string get_tournaments = base_url + "get_tournaments";
+    public const string get_my_tournaments = base_url + "get_my_tournaments";
+    public const string get_tournament_details = base_url + "get_tournament_details";
+    public const string register_tournament = base_url + "register_tournament";
+    public const string request_tournament = base_url + "request_tournament";
+    public const string start_tournament_battle = base_url + "start_tournament_battle";
+    public const string end_tournament_battle = base_url + "end_tournament_battle";
+    public const string get_my_tournament_battles = base_url + "get_my_tournament_battles";
+
+
+    //One Signal Device Token
+    public const string update_device_token = base_url + "update_device_token";
+    #endregion
+}
